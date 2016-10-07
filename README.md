@@ -1,2 +1,2 @@
 # linkup
-A first repoistory needs a name
+A first repository needs a name
