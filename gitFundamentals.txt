@@ -1,0 +1,90 @@
+Git Tutorial for Beginners: Command-Line Fundamentals
+
+https://www.youtube.com/watch?v=HVsySz-h9r4#t=1802.125012
+
+Setup
+
+$ git --version
+
+$ git config --global user.name "your name"
+$ git config --global user.emai."your email address"
+
+$ git config --list
+
+$ git help config
+$ git config --help
+
+Track code baes on local machine
+
+$ git init
+
+$ git status
+$ git log
+
+$ touch .gitignore // for files you do NOT want tracked
+
+$ git add –A
+$ git reset // will remove all files from staging area
+
+$ git commit –m "add detail about changes"
+
+
+Working with a remote repository 
+
+$ git clone <url> //where to clone .
+$ git clone https://github.com/RemoteRepoYouWantToClone .
+
+$ git remote –v
+$ git branch -a
+ 
+Commit changes as we did before
+$ git diff
+$ git status
+$ git add -A
+$ git commit –m "add detail about changes"
+
+Then push
+$ git pull origin master
+$ git push origin master
+
+Working with branches
+
+$ git branch <branch name>
+$ git checkout <branch name>
+
+$ git branch //will show all branches and current branch
+
+$ git push –u origin <branch name> //-u associates local with remote branch the first time 
+$ git branch –a
+
+$ git pull
+$ git push
+
+Merge a branch
+$ git checkout master
+$ git pull origin master
+$ git branch --merged
+$ git merge <branch name>
+$ git push origin master
+
+Deleting a branch
+$ git branch --merged
+$ git branch –d <branch name>
+$ git branch -a
+$ git push origin --delete <branch name>
+
+Faster Example
+$ git branch <new branch>
+$ git checkout <new branch>
+$ git status
+$ git add -A
+$ git commit –m "descriptive message"
+$ git push –u origin <new branch>
+$ git checkout master
+$ git pull origin master
+$ git merge <new branch>
+$ git push origin master
+$ git branch –d <new branch>
+$ git push origin --delete <new branch>
+$ git branch -a
+
